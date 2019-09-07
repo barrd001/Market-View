@@ -1,0 +1,176 @@
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Stonks</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
+        <link rel="icon" href="./assets/images/favicon.ico">
+    </head>
+    <body>
+
+    <div class="container-fluid">
+        
+        <div class="jumbotron jumbotron-fluid text-center headerSection">
+            <div class="container">
+              <h1 class="display-3">Stock Market Site</h1>
+              <p class="lead">Real-time information, statistics, up-to-date news</p>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navigation Bar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Watchlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Position</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">*tbd*</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">*tbd*</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">*tbd*</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="row row1">
+            <div class="col-lg-9">
+                <div class="searchBar">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>    
+                </div>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                            <div id="tradingview_724df" class="tradingView"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                            new TradingView.widget(
+                            {
+                            "autosize": true,
+                            "symbol": "NASDAQ:AAPL",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "Dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "hide_side_toolbar": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_724df"
+                        }
+                            );
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </div>
+            <div class="col-lg-3">
+                <div class="section">
+                    <h1>News</h1>
+                    <div class="newsContainer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                           
+                    </div>             
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="section">
+                    <h1>Key Stats Table</h1>
+                    <div class="tableContainer">
+                        <table class="table table-bordered">
+                            <thead class="tableHead">
+                                <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+            
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>Polar Express</td>
+                                <td>North Pole</td>
+                                <td>1440</td>
+                                <td>00:00 AM</td>
+                                <td>1278</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                <td>Thomas the Tank Engine</td>
+                                <td>Sodor Island</td>
+                                <td>45</td>
+                                <td>14:00 PM</td>
+                                <td>40</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                <td>Bullet Train</td>
+                                <td>Magazine Mountain</td>
+                                <td>120</td>
+                                <td>02:30 PM</td>
+                                <td>30</td>
+                                </tr>
+            
+                            </tbody>
+                        </table>                            
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="section">
+                    <h1>*tbd*</h1>
+                    <div class="tbdContainer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                                           
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/moment"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="./assets/javascript/app.js"></script>
+    </body>
+</html>
