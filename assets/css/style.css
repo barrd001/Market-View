@@ -1,0 +1,21 @@
+.newsContainer {
+    position: absolute;
+    height: 800px;
+    width: 50%;
+    border: 10px solid lightblue;
+    overflow: auto;
+}
+.news {
+    width: 100%;
+    height: 20%;
+    border-bottom: 10px solid gray;
+}
+a {
+    font-size: 20px;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: royalblue;
+}
