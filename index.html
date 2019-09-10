@@ -28,6 +28,43 @@
                          
                 </div>
         </div>
+        <div class="card-body">
+          <table class="table" id="positions-table">
+                  <thead>
+                    <tr>
+                      <th scope="col" id="initial-price-div">Stock Name</th>
+                      <th scope="col" id="initial-price-div">Initial Price Per Unit($)</th>
+                      <th scope="col" id="shares-div">Shares</th>
+                      <th scope="col" id="change-div">Final Price Per Unit($)</th>
+                      <th scope="col" id="total-change-div">Change in Value ($)</th>
+                      <th scope="col" id="percent-change-div">% Change in Value</th>
+                    </tr>
+                  </thead>
+                  <trow>
+                    <tbody>
+                      
+                    </tbody>
+                  </trow>
+                  </table>
+  </div>
+
+  <!-- New Input for Positions Table Form -->
+  <form>
+      <div class="form-group">
+          <label for="input-name-div">Stock Name</label>
+          <input type="text" class="form-control" id="input-name-div" placeholder="Stock Name">
+        </div>
+    <div class="form-group">
+          <label for="input-initial-price-div">Initial Price</label>
+          <input type="text" class="form-control" id="input-initial-price-div" placeholder="Initial Price">
+        </div>
+  <div class="form-group">
+          <label for="input-shares-div">Shares</label>
+          <input type="text" class="form-control" id="input-shares-div" placeholder="# of Shares">
+          </div>   
+      </form>
+
+      <button type="button" class="btn btn-secondary" id="add-position-btn">Submit</button>
 
         <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
