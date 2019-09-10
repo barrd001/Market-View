@@ -15,10 +15,18 @@ $(document).on('click', '#buttoncheck', function() {
             var newsDiv = $("<div>")
             var headline = $("<a>")
             headline.text(results[i].title);
-            headline.attr("href", results[i].url)
+            headline.attr("href", results[i].url);
+            headline.attr("class", "headline");;
             console.log(headline);
             newsDiv.append(headline);
             newsDiv.attr("class", "news");
+            var author = $("<h2>");
+            author.text("By:" + results[i].author);
+            newsDiv.append(author);
+            var description = $("<h4>");
+            description.attr("class", "content");
+            description.text(results[i].description);
+            author.append(description);
             $(".newsContainer").append(newsDiv);
         }
         });
