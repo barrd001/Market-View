@@ -1,0 +1,40 @@
+body {
+    background-color: #121723;
+    color: #f9f9f9;
+}
+
+.headerSection {
+    background-color: #28a58a;
+}
+
+.section {
+    background-color: #ef534f;
+    height: auto;
+}
+
+.row1 {
+    margin: 0% 0% 1% 0%;
+}
+
+.navbar {
+    margin: -1% 0% 1% 0%;
+}
+
+.newsContainer, .tableContainer, .tbdContainer {
+    color: #121723;
+    background-color: #f9f9f9;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ef534f;
+    padding: 1% 2% 1% 2%;
+}
+
+.newsContainer {
+    overflow: scroll;
+}
+
+.tradingView {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ef534f;
+}
