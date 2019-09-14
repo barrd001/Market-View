@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+        <div class="row">
+                <div class="col-lg-5" id="initial-price-div">
+                        
+                </div>
+                <div class="col-lg-5" id="change-div">
+
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-5" id="final-price-div">
+                         
+            </div>
+            <div class="col-lg-5" id="percent-change-div">
+                         
+                </div>
+        </div>
+        <div class="card-body">
+          <table class="table" id="positions-table">
+                  <thead>
+                    <tr>
+                      <th scope="col" id="initial-price-div">Stock Symbol</th>
+                      <th scope="col" id="initial-price-div">Initial Price Per Unit($)</th>
+                      <th scope="col" id="shares-div">Shares</th>
+                      <th scope="col" id="change-div">Final Price Per Unit($)</th>
+                      <th scope="col" id="total-change-div">Change in Value ($)</th>
+                      <th scope="col" id="percent-change-div">% Change in Value</th>
+                    </tr>
+                  </thead>
+                  <trow>
+                    <tbody>
+                      
+                    </tbody>
+                  </trow>
+                  </table>
+  </div>
+
+  <!-- New Input for Positions Table Form -->
+  <form>
+      <div class="form-group">
+          <label for="input-name-div">Stock Symbol</label>
+          <input type="text" class="form-control" id="input-symbol-div" placeholder="Stock Symbol">
+        </div>
+    <div class="form-group">
+          <label for="input-initial-price-div">Initial Price</label>
+          <input type="text" class="form-control" id="input-initial-price-div" placeholder="Initial Price">
+        </div>
+  <div class="form-group">
+          <label for="input-shares-div">Shares</label>
+          <input type="text" class="form-control" id="input-shares-div" placeholder="# of Shares">
+          </div>   
+      </form>
+
+      <button type="button" class="btn btn-secondary" id="add-position-btn">Submit</button>
+
+        <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
