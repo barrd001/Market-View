@@ -1,72 +1,52 @@
-<!DOCTYPE html>
+<!-- table test HTML -->
 
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
-
-  <title>Title</title>
+  <meta charset="utf-8">
+  <title>Train Times</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery.js"></script>
-</head>
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
 
-<body>
-        <div class="row">
-                <div class="col-lg-5" id="initial-price-div">
-                        
-                </div>
-                <div class="col-lg-5" id="change-div">
+  <body>
 
-                </div>
-            </div>
-        <div class="row">
-            <div class="col-lg-5" id="final-price-div">
-                         
-            </div>
-            <div class="col-lg-5" id="percent-change-div">
-                         
-                </div>
-        </div>
-        <div class="card-body">
-          <table class="table" id="positions-table">
-                  <thead>
-                    <tr>
-                      <th scope="col" id="initial-price-div">Stock Symbol</th>
-                      <th scope="col" id="initial-price-div">Initial Price Per Unit($)</th>
-                      <th scope="col" id="shares-div">Shares</th>
-                      <th scope="col" id="change-div">Final Price Per Unit($)</th>
-                      <th scope="col" id="total-change-div">Change in Value ($)</th>
-                      <th scope="col" id="percent-change-div">% Change in Value</th>
-                    </tr>
-                  </thead>
-                  <trow>
-                    <tbody>
-                      
-                    </tbody>
-                  </trow>
-                  </table>
-  </div>
+    <div class="card-body">
+      <table class="table" id="table-table">
+              <thead>
+                <tr>
+                  <th scope="col" id="table-symbol-div">Symbol</th>
+                  <th scope="col" id="table-price-div">Price</th>
+                  <th scope="col" id="table-high-div">Day High</th>
+                  <th scope="col" id="table-low-div">Day Low</th>
+                  <th scope="col" id="table-52-high-div">52 Week High</th>
+                  <th scope="col" id="table-52-low-div">52 Week Low</th>
+                  <th scope="col" id="table-volume-div">Volume</th>
+                  <th scope="col" id="table-volume-avg-div">Volume Avg</th>
+                  <th scope="col" id="table-day-change-div">Day Change</th>
+                  <th scope="col" id="table-day-percent-div">Change %</th>
+                </tr>
+              </thead>
+              <trow>
+                <tbody>
+                  
+                </tbody>
+              </trow>
+              </table>
+</div>
 
-  <!-- New Input for Positions Table Form -->
-  <form>
-      <div class="form-group">
-          <label for="input-name-div">Stock Symbol</label>
-          <input type="text" class="form-control" id="input-symbol-div" placeholder="Stock Symbol">
-        </div>
-    <div class="form-group">
-          <label for="input-initial-price-div">Initial Price</label>
-          <input type="text" class="form-control" id="input-initial-price-div" placeholder="Initial Price">
-        </div>
+
+<form>
   <div class="form-group">
-          <label for="input-shares-div">Shares</label>
-          <input type="text" class="form-control" id="input-shares-div" placeholder="# of Shares">
-          </div>   
-      </form>
+      <label for="placeholder-stock-search-div">Stock Name</label>
+      <input type="text" class="form-control" id="placeholder-stock-search-div">
+    </div>
 
-      <button type="button" class="btn btn-secondary" id="add-position-btn">Submit</button>
+    <button type="button" class="btn btn-secondary" id="search-stock-btn">Submit</button>
 
-        <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
-</body>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </body>
