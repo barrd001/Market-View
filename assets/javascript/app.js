@@ -30,7 +30,7 @@ $("#add-position-btn").on("click", function(event) {
     var initialPrice = $("#input-initial-price-div").val().trim();
     var numShares = $("#input-shares-div").val().trim();
     // get request from market API (placeholder API for now)
-    var queryURL = "https://api.worldtradingdata.com/api/v1/stock?symbol=" + stockSymbol + "&api_token=E9WkYOdirs63yl0rDrZNAnAfzIT9JEoTVrjDDedq2xeTTeROg4ZvtJy8HCUC"
+    var queryURL = "https://api.worldtradingdata.com/api/v1/stock?symbol=" + stockSymbol + "&api_token=xA3lbOmc8gmKeMC1u9HoH6Y691VHyXOUnslOKWWyYYNlBrU0TGHthS4j59vg"
     var newPrice;
 
     $.ajax({
