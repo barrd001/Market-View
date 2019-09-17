@@ -4,186 +4,214 @@
         <title>Stonks</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
-<!--         <link rel="icon" href="./assets/images/favicon.ico"> -->
+        <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
+<!-- <link rel="icon" href="./assets/images/favicon.ico"> -->
         <script src="https://unpkg.com/moment"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="./assets/javascript/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
 
-    <div class="container-fluid">
-        
-        <div class="jumbotron jumbotron-fluid text-center headerSection">
-            <div class="container">
-              <h1 class="display-3">Stock Market Site</h1>
-              <p class="lead">Real-time  information, statistics, up-to-date news</p>
-            </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navigation Bar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- brand sumbol -->
+            <a class="navbar-brand" href="#"><i class="fas fa-money-bill-wave orange large"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto linksContainer">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Graph<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Watchlist</a>
+                    <a class="nav-link" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Position</a>
+                    <a class="nav-link" href="#">Stats</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">*tbd*</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">*tbd*</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">*tbd*</a>
-                </li>
+                <li class="nav-item signup">
+                    <a class="nav-link" id="sign-up" href="#"><i class="fas fa-user-plus"></i> Sign up</a>
+                </li>                    
+                <li class="nav-item signin">
+                    <a class="nav-link" id="sign-in" href="#"><i class="fas fa-sign-out-alt"></i> Sign in</a>
+                </li>                    
                 </ul>
             </div>
         </nav>
-        
-        <div class="row row1">
-            <div class="col-lg-9">
-                <div class="searchBar">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary my-2 my-sm-0" id="search-button" type="submit">Search</button>
-                    </form>    
-                </div>
 
+        <div class="container-fluid">
 
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div id="tradingview_a95cb" class="tradingView"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-    <script type="text/javascript">
+            <div class="row titleRow">
+                <div class="col-lg titleContainer">
+                    <div class="titleWrapper">
+                        <div class="text-center">
+                            <h1 class="title"> <i class="fas fa-money-bill-wave orange"></i> Fantasy Stocks <i class="fas fa-money-bill-wave orange"></i> </h1>
+                        </div>
+                    </div>     
+                </div>                    
+            </div>
 
-     var newSearch = "AAPL";
-     new TradingView.widget({
-        "autosize": true,
-        "symbol": newSearch,
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "Dark",
-        "style": "1",
-        "locale": "en",
-        "toolbar_bg": "#f1f3f6",
-        "enable_publishing": false,
-        "hide_top_toolbar": true,
-        "withdateranges": true,
-        "allow_symbol_change": true,
-        "container_id": "tradingview_a95cb"
-    });
-     
-    $('#search-button').on('click', function(event) {
-    event.preventDefault();
-    var searchBar = $('#search-bar').val().trim();
-    newSearch = searchBar;
-    console.log(searchBar);
-    new TradingView.widget({
-        "autosize": true,
-        "symbol": newSearch,
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "Dark",
-        "style": "1",
-        "locale": "en",
-        "toolbar_bg": "#f1f3f6",
-        "enable_publishing": false,
-        "hide_top_toolbar": true,
-        "withdateranges": true,
-        "allow_symbol_change": true,
-        "container_id": "tradingview_a95cb"
-        });
-    });
+            <div class="row">
+                <div class="col-lg graphContainer">
+                    <div class="row searchRow">
+                        <div class="col-sm-9 searchBar">
+                            
+                            <form class="form-inline">
+                                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="AAPL">
+                                <button type="submit" class="btn btn-primary mb-2">Save</button>
+                            </form>
+                        </div>
+                        <select class="custom-select col-sm-3 savedTickers">
+                            <option selected>AAPL</option>
+                            <option value="1">WMT</option>
+                            <option value="2">CPB</option>
+                            <option value="3">TSLA</option>
+                        </select>
+                    </div>
 
-    </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-                </div>
-            <div class="col-lg-3">
-                <div class="section">
-                    <h1>News</h1>
-                    <div class="newsContainer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                      
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                           
-                    </div>             
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="col-lg tradingview-widget-container widget">
+                            <div id="tradingview_a95cb" class="tradingView"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                        
+                            var newSearch = "AAPL";
+                            new TradingView.widget({
+                                "autosize": true,
+                                "symbol": newSearch,
+                                "interval": "D",
+                                "timezone": "Etc/UTC",
+                                "theme": "Dark",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": true,
+                                "withdateranges": true,
+                                "allow_symbol_change": true,
+                                "container_id": "tradingview_a95cb"
+                            });
+                            
+                            $('#search-button').on('click', function(event) {
+                            event.preventDefault();
+                            var searchBar = $('#search-bar').val().trim();
+                            newSearch = searchBar;
+                            console.log(searchBar);
+                            new TradingView.widget({
+                                "autosize": true,
+                                "symbol": newSearch,
+                                "interval": "D",
+                                "timezone": "Etc/UTC",
+                                "theme": "Dark",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": true,
+                                "withdateranges": true,
+                                "allow_symbol_change": true,
+                                "container_id": "tradingview_a95cb"
+                                });
+                            });
+                        
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="section">
-                    <h1>Key Stats Table</h1>
-                    <div class="tableContainer">
+            <div class="row">
+                <div class="col-lg newsContainer">
+                    <div class="row newsRow">
+
+                            <div class="col-lg-8 news">
+                                <h1>News</h1>
+
+                                <div class="col-lg newsWrapper">
+                                    <div class="col-lg article">
+                                        <p>Example</p>
+                                    </div>                                    
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4 savedNews">
+                                <h1>Saved Articles</h1>
+
+                                <div class="col-lg savedNewsWrapper">
+                                    <div class="col-lg savedArticle">
+                                        <p>Example</p>
+                                    </div>                                    
+                                </div>
+
+
+                            </div>                             
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg statsContainer">
+                    <div class="col-lg tableWrapper">
                         <table class="table table-bordered">
                             <thead class="tableHead">
                                 <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Train Name</th>
-                                <th scope="col">Destination</th>
-                                <th scope="col">Frequency (min)</th>
-                                <th scope="col">Next Arrival</th>
-                                <th scope="col">Minutes Away</th>
+                                <th scope="col">Lorem</th>
+                                <th scope="col">Ipsum</th>
+                                <th scope="col">Dolor</th>
+                                <th scope="col">Sit</th>
+                                <th scope="col">Amet</th>
+                                <th scope="col">Lorem</th>
+                                <th scope="col">Ipsum</th>
+                                <th scope="col">Dolor</th>
+                                <th scope="col">Sit</th>
+                                <th scope="col">Amet</th>
                                 </tr>
                             </thead>
-                            <tbody>
-            
+                            <tbody id="train-table">
                                 <tr>
-                                <th scope="row">1</th>
-                                <td>Polar Express</td>
-                                <td>North Pole</td>
-                                <td>1440</td>
-                                <td>00:00 AM</td>
-                                <td>1278</td>
+                                <td>Lorem</td>
+                                <td>Ipsum</td>
+                                <td>Dolor</td>
+                                <td>Sit</td>
+                                <td>Amet</td>
+                                <td>Lorem</td>
+                                <td>Ipsum</td>
+                                <td>Dolor</td>
+                                <td>Sit</td>
+                                <td>Amet</td>
                                 </tr>
-                                <tr>
-                                <th scope="row">2</th>
-                                <td>Thomas the Tank Engine</td>
-                                <td>Sodor Island</td>
-                                <td>45</td>
-                                <td>14:00 PM</td>
-                                <td>40</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">3</th>
-                                <td>Bullet Train</td>
-                                <td>Magazine Mountain</td>
-                                <td>120</td>
-                                <td>02:30 PM</td>
-                                <td>30</td>
-                                </tr>
-            
                             </tbody>
-                        </table>                            
+                        </table>                        
                     </div>
-
-                </div>
+                        
+                </div>                
             </div>
-            <div class="col-lg-5">
-                <div class="section">
-                    <h1>*tbd*</h1>
-                    <div class="tbdContainer">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                                           
-                    </div>
-                </div>
-            </div>           
-        </div>
 
-    </div>
+
+
+
+
+
+        </div>
+<!--
+    
+title with background
+graph
+news
+stats
+
+
+
+saved information
+
+-->
+
 
 
 
