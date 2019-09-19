@@ -1,125 +1,49 @@
-/* body {
-    background-image: url(../images/newYork.jpg);
-    background-size: cover;
-    color: #ece2d0;
-}
-
-.mainTitle {
-    font-weight: bold;
-    font-size: 5rem;
-}
-
-.contentWrapper {
-    background-color: #121723dc;
-
-}
-
-.contentWrapper {
-    margin: 5% auto 0 auto;
-    width: 50%;
-} */
-
-/* Graph Page Formatting
-============================================================== */
-
-
-
-
-
-
-/* body {
-    background: white;
-    background-size: cover;
-    color: #ece2d0;
-}
-
-.titleBackground {
-    background-image: url(../images/newYork.jpg);
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-}
-
-.mainTitle {
-    font-weight: bold;
-    font-size: 5rem;
-}
-
-.contentWrapper {
-    background-color: #121723dc;
-}
-
-.mainTitle {
-    background-color: rgba(135, 207, 235, 0);
-    margin-top: 50px;
-    padding: 5% 20px; */ /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
-    
-/*     -webkit-transform: skewY(-5deg);
-    -moz-transform: skewY(-5deg);
-    -ms-transform: skewY(-5deg);
-    -o-transform: skewY(-5deg);
-    transform: skewY(-5deg);
-  }
-  
-  .mainTitle > .wrapper {
-    -webkit-transform: skewY(5deg);
-    -moz-transform: skewY(5deg);
-    -ms-transform: skewY(5deg);
-    -o-transform: skewY(5deg);
-    transform: skewY(5deg);
-  }  */
-
-
-
-
-
-
-/*   
-121723
-ece2d0
-*/
-
-
-
 html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 body {
-    background-image: url(../images/darkGrid.png);
-    background-attachment: fixed;
-    background-position: center;
-
-    background-size: repeat;
+  background-image: url(../images/darkGrid.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: repeat;
 }
 
 .orange {
-    color: #d05353;
+  color: #d05353;
 }
 
 .navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 200;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.986);
+  height: 10vh;
 }
 
 .large {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .linksContainer {
-    width: 100%;
+  width: 100%;
 }
 
-
-
+.pageLink {
+  margin-left: 1%;
+}
 
 /* Title Formatting
 ============================================================== */
-
-
+  
   .title {
-      font-size: 5rem;
+    font-size: 5rem;
   }
 
   .titleContainer {
@@ -149,11 +73,7 @@ body {
   }
 
   .signup {
-    margin-left: 77%;
-  }
-
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.986);
+    margin-left: 65%;
   }
 
   .nav-link {
@@ -187,6 +107,16 @@ body {
     height: 80vh;
   }
 
+  .btn {
+    background-color: #d05353;
+    border-color: #b14848;
+  }
+
+  .btn:hover {
+    background-color: #b14848;
+    border-color: #a34242;
+  }
+
 /* News Formatting
 ============================================================== */
   .newsContainer {
@@ -196,11 +126,13 @@ body {
   .news {
     background-image: url(../images/orangeTiles.png);
     height: 80vh;
+    border-radius: 10px 0 0 10px;
   }
 
   .savedNews {
     background-image: url(../images/darkOrangeTiles.png);
     height: 80vh;
+    border-radius: 0 10px 10px 0;
   }
 
   .newsRow {
@@ -212,13 +144,15 @@ body {
   .newsWrapper {
     background-image: url(../images/lightScratch.png);
     height: 85%;
-    padding: 1% 1% 1% 1%;
+    padding: 0 1% 1% 1%;
+    overflow: scroll;
   }
 
   .savedNewsWrapper {
     background-image: url(../images/lightScratch.png);
     height: 85%;
-    padding: 2% 2% 2% 2%;
+    padding: 1% 2% 2% 2%;
+    overflow: scroll;
   }
 
   .article {
@@ -226,6 +160,7 @@ body {
     background-color: white;
     color: #121723;
     padding-top: 1%;
+    margin-top: 1%;
   }
 
   .savedArticle {
@@ -233,6 +168,7 @@ body {
     background-color: white;
     color: #121723;
     padding-top: 1%;
+    margin-top: 1%;
   }
 
 /* Stats Formatting
@@ -255,29 +191,126 @@ body {
   }
 
   .tableHead {
-    background-color: #49aaa5de;
+    background-color: #49aaa5;
   }
 
   table.table-bordered{
-    border:1px solid #121723;
+    border:1px solid #49aaa5;
     margin-top:20px;
   }
   table.table-bordered > thead > tr > th{
-    border:1px solid #121723;
+    border:1px solid #3c8d89;
   }
   table.table-bordered > tbody > tr > td{
-    border:1px solid #121723;
-  |}
-
-
-
-
-
-
-
-
+    border:1px solid #49aaa5;
+  }
 
 /* 
-  watchlist
+==============================================================
+==============================================================
+==============================================================
+============================PAGE 2============================
+==============================================================
+==============================================================
+============================================================== */
 
-*/
+/* Positions Formatting
+============================================================== */
+
+.positionsContainer {
+  height: 90vh;
+  margin-top: 4%;
+  border-radius: 10px;
+}
+
+.positions {
+  background-image: url(../images/orangeTiles.png);
+  height: 80vh;
+  border-radius: 10px;
+}
+
+.positionsRow {
+  margin: 4% auto 0 auto;
+  width: 95%;
+  color: #ece2d0;
+}
+
+.positionsWrapper {
+  background-image: url(../images/lightScratch.png);
+  height: 85%;
+  padding: 0 4% 1% 4%;
+  overflow: scroll;
+}
+
+.position {
+  height: 31vh;
+  background-color: white;
+  color: #121723;
+  padding-top: 1%;
+  margin-top: 1%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a09a8d;
+  border-radius:10px;
+  padding: 5px;
+}
+
+/* Watchlist Formatting
+============================================================== */
+
+.watchlistContainer {
+  height: 100vh;
+  margin-top: 2%;
+}
+
+.watchlist {
+  background-image: url(../images/lightScratch.png);
+  height: 80vh;
+}
+
+.watchlistRow {
+  margin: 4% auto 0 auto;
+  width: 95%;
+  color: #ece2d0;
+}
+
+.watchlistWrapper {
+  background-image: url(../images/lightScratch.png);
+  height: 85%;
+  padding: 0 4% 1% 4%;
+  overflow: scroll;
+}
+
+.watchlist {
+  height: 31vh;
+  background-color: white;
+  color: #121723;
+  padding-top: 1%;
+  margin-top: 1%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #121723;
+  border-radius:10px;
+  padding: 5px;
+}
+
+.watchlistTable {
+  color: #121723;
+  background-color: #f2fffede;
+  margin: 0 0 0 0;
+}
+
+.watchlistTableHead {
+  background-color: #49aaa5;
+}
+
+table.table-bordered{
+  border:1px solid #49aaa5;
+  margin-top:20px;
+}
+table.table-bordered > thead > tr > th{
+  border:1px solid #3c8d89;
+}
+table.table-bordered > tbody > tr > td{
+  border:1px solid #49aaa5;
+}

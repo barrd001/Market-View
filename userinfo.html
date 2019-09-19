@@ -1,0 +1,189 @@
+<!DOCTYPE 'html'>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Stonks</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
+        <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
+<!-- <link rel="icon" href="./assets/images/favicon.ico"> -->
+        <script src="https://unpkg.com/moment"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="./assets/javascript/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- brand sumbol -->
+            <a class="navbar-brand" href="#"><i class="fas fa-money-bill-wave orange large"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto linksContainer">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Positions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Watchlist</a>
+                </li>
+                <li class="nav-item pageLink">
+                    <a class="nav-link" href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item signup">
+                    <a class="nav-link" id="sign-up" href="#"><i class="fas fa-user-plus"></i> Sign up</a>
+                </li>                    
+                <li class="nav-item signin">
+                    <a class="nav-link" id="sign-in" href="#"><i class="fas fa-sign-out-alt"></i> Sign in</a>
+                </li>                    
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+
+<!--             
+            <div class="row titleRow">
+                <div class="col-lg titleContainer">
+                    <div class="titleWrapper">
+                        <div class="text-center">
+                            <h1 class="title"> <i class="fas fa-money-bill-wave orange"></i> Fantasy Stocks <i class="fas fa-money-bill-wave orange"></i> </h1>
+                        </div>
+                    </div>     
+                </div>                    
+            </div> 
+-->
+
+            <div class="row">
+                <div class="col-lg-12 positionsContainer">
+                    <div class="row positionsRow">
+
+                        <div class="col-lg positions">
+                            <h1>Your Positions</h1>
+
+                            <div class="col-lg positionsWrapper">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 1</p>
+                                    </div>                                    
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 2</p>
+                                    </div>                                    
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 3</p>
+                                    </div>                                    
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 4</p>
+                                    </div>                                      
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 5</p>
+                                    </div>                                    
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 6</p>
+                                    </div>                                    
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 7</p>
+                                    </div>                                    
+                                    <div class="col-lg-3 col-md-6 position">
+                                        <p>Position 8</p>
+                                    </div>                                      
+                                </div>
+
+                            </div> 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 watchlistContainer">
+                    <div class="row watchlistRow">
+
+                        <div class="col-lg watchlist">
+                            <h1>Watchlist</h1>
+
+                            <div class="col-lg watchlistContainer">
+                                <div class="col-lg WatchlistTableWrapper">
+                                    <table class="table table-bordered">
+                                        <thead class="tableHead">
+                                            <tr>
+                                            <th scope="col">Lorem</th>
+                                            <th scope="col">Ipsum</th>
+                                            <th scope="col">Dolor</th>
+                                            <th scope="col">Sit</th>
+                                            <th scope="col">Amet</th>
+                                            <th scope="col">Lorem</th>
+                                            <th scope="col">Ipsum</th>
+                                            <th scope="col">Dolor</th>
+                                            <th scope="col">Sit</th>
+                                            <th scope="col">Amet</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="watchlist-table">
+                                            <tr>
+                                            <td>Lorem</td>
+                                            <td>Ipsum</td>
+                                            <td>Dolor</td>
+                                            <td>Sit</td>
+                                            <td>Amet</td>
+                                            <td>Lorem</td>
+                                            <td>Ipsum</td>
+                                            <td>Dolor</td>
+                                            <td>Sit</td>
+                                            <td>Amet</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>        
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+<!--
+    
+title with background
+graph
+news
+stats
+
+
+
+saved information
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
