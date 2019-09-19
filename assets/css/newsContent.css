@@ -1,6 +1,6 @@
 .headline {
     display: block;
-    border-top: 1px solid black;
+    border-top: 3px solid black;
 }
 a:link,a:visited, a:active {
     color:#d05353;
@@ -25,11 +25,11 @@ a:hover {
 }
 h2 {
     color: black;
-    font-size: 40px;
+    font-size: 50px !important;
     float: left;
 }
 .content {
-    width: 60%;
+    width: 70%;
     color: black;
     float: right;
     text-overflow: ellipsis;

@@ -39,13 +39,13 @@ $(document).ready(function() {
         picture.attr("src", results[i].urlToImage);
       }
       picture.css("float", "left");
-      picture.css("width", "270px");
-      picture.css("height", "170px");
+      picture.css("width", "320px");
+      picture.css("height", "220px");
       picture.css("margin-top", "50px");
       headline.text(results[i].title);
       headline.attr("href", results[i].url);
       headline.attr("class", "headline");
-      headline.css("font-size", "30px");
+      headline.css("font-size", "40px");
       headline.css("font-weight", "bolder");
       headline.css("margin-bottom", "20px");
       console.log(headline);
@@ -62,7 +62,7 @@ $(document).ready(function() {
       author.css("float", "left");
       newsDiv.append(author);
       var description = $("<h4>");
-      description.css("font-size", "30px");
+      description.css("font-size", "40px");
       description.attr("class", "content");
       description.text(results[i].description);
       author.append(description);
@@ -151,13 +151,15 @@ $(document).on("click", "#submit-button", function() {
         picture.attr("src", results[i].urlToImage);
       }
       picture.css("float", "left");
-      picture.css("width", "220px");
-      picture.css("height", "120px");
+      picture.css("width", "320px");
+      picture.css("height", "220px");
+      picture.css("margin-top", "50px");
       headline.text(results[i].title);
       headline.attr("href", results[i].url);
       headline.attr("class", "headline");
-      headline.css("font-size", "25px");
+      headline.css("font-size", "40px");
       headline.css("font-weight", "bolder");
+      headline.css("margin-bottom", "20px");
       console.log(headline);
       newsDiv.append(headline);
       newsDiv.css("background-image", "url('../images/lightScratch.png')");
@@ -169,11 +171,10 @@ $(document).on("click", "#submit-button", function() {
       } else {
         author.text("By:" + results[i].author);
       }
-      author.css("font-size", "20px");
       author.css("float", "left");
       newsDiv.append(author);
       var description = $("<h4>");
-      description.css("font-size", "25px");
+      description.css("font-size", "40px");
       description.attr("class", "content");
       description.text(results[i].description);
       author.append(description);
