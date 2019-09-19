@@ -59,7 +59,34 @@
 -->
 
             <div class="row">
-                <div class="col-lg-12 positionsContainer">
+                <div class="col-lg-3 formContainer">
+                    <div class="row formRow">
+
+                        <div class="col-lg form">
+                            <h1 class="text-center">Create a Position</h1>
+
+                            <div class="col-lg formContainer">
+                                <div class="col-lg formWrapper">
+                                    <div class="form-group">
+                                        <label for="symbol">Symbol</label>
+                                        <input type="ticker" class="form-control" id="symbol" placeholder="AAPL">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="shares">Number of Shares</label>
+                                        <input type="share" class="form-control" id="shares" placeholder="50">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="average">Average Cost Per Share ($)</label>
+                                        <input type="cost" class="form-control" id="average" placeholder="100">
+                                    </div>
+                                    <!-- SYMBOL, SHARE AMOUNT, DOLLARS, AVERAGE  -->
+                                </div>
+                            </div>        
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 positionsContainer">
                     <div class="row positionsRow">
 
                         <div class="col-lg positions">
@@ -105,7 +132,15 @@
                     <div class="row watchlistRow">
 
                         <div class="col-lg watchlist">
-                            <h1>Watchlist</h1>
+                            <div class="row watchlistHeadRow">
+                                <h1 class="watchlistHead">Watchlist</h1>
+                                <div class="watchlistAdd">
+                                    <form class="form-inline">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="addTicker" placeholder="AAPL">
+                                        <button type="add" class="btn btn-primary mb-2">Add</button>
+                                    </form>
+                                </div>
+                            </div>
 
                             <div class="col-lg watchlistContainer">
                                 <div class="col-lg WatchlistTableWrapper">

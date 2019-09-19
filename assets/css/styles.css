@@ -214,12 +214,49 @@ body {
 ==============================================================
 ============================================================== */
 
+/* Form Formatting
+============================================================== */
+
+.formContainer {
+  height: 80vh;
+  margin-top: 8%;
+}
+
+.formRow {
+  margin: 10% auto 0 auto;
+  color: #ece2d0;
+}
+
+.form {
+  height: 70vh;
+  background-image: url(../images/lightScratch.png);
+  color: #121723;
+  padding-top: 1%;
+  margin-top: 1%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #121723;
+  border-radius:10px;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Positions Formatting
 ============================================================== */
 
 .positionsContainer {
-  height: 90vh;
-  margin-top: 4%;
+  height: 80vh;
+  margin-top: 5%;
   border-radius: 10px;
 }
 
@@ -254,6 +291,37 @@ body {
   border-radius:10px;
   padding: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.watchlistHead {
+  display: inline-block;
+}
+
+.watchlistAdd {
+  display: inline-block;
+  margin: .3% 0 0 5%;
+}
+
+.watchlistHeadRow {
+  padding: 0 0 0 2%;
+}
+
+
+
+
+
 
 /* Watchlist Formatting
 ============================================================== */
