@@ -1,8 +1,9 @@
 // -- PLACEHOLDER CHANGES FOR POSITIONS WATCHLIST
 $(document).ready(function() {
-  $(document).on("click", "#submit-button", function() {
+  $(document).on("click", "#add-button", function() {
+    event.preventDefault()
     // TAKES IN USER INPUT FROM FORM
-  var searchWatchlistSymbol = $("#placeholder-watchlist-symbol-input-div").val().trim();
+  var searchWatchlistSymbol = $("#symbol-input").val().trim();
   // taking in search term
   var queryURL =
   "https://api.worldtradingdata.com/api/v1/stock?symbol=" +
@@ -14,7 +15,7 @@ $(document).ready(function() {
   })
   .then(function(data) {
   // Clears all of the text-boxes
-  $("#placeholder-stock-search-div").val("");
+  $("#symbol-input").val("");
   // setting both daychange variables to green/red based on market data
   var dayChange = $("<td>");
   var dayChangePct = $("<td>");
@@ -27,9 +28,9 @@ $(document).ready(function() {
     dayChangePct.css("color", "lightgreen");
     dayChange.css("color", "lightgreen");
   }
-  $(".table").append(newWatchlistRow);
- });
- var newWatchlistRow = $("<tr>").append(
+  $("#watchlist-table").append(newWatchlistRow);
+
+  var newWatchlistRow = $("<tr>").append(
   $("<td>").text(data.data[0].symbol),
   $("<td>").text(data.data[0].price),
   $("<td>").text(data.data[0].day_high),
@@ -39,6 +40,7 @@ $(document).ready(function() {
   dayChange,
   dayChangePct,
  );
- $("#table-table > tbody").append(newWatchlistRow);
+ });
+ $("#watchlist-table > tbody").append(newWatchlistRow);
  })
  });
