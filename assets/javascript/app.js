@@ -37,10 +37,9 @@ $(document).ready(function () {
           $("<td>").text(data.data[0].day_low),
           $("<td>").text(data.data[0]["52_week_high"]),
           $("<td>").text(data.data[0]["52_week_low"]),
-          dayChange,
-          dayChangePct,
         );
+        $("#watchlist-table > tbody").append(newWatchlistRow);
       });
-    $("#watchlist-table > tbody").append(newWatchlistRow);
+
   })
 });
