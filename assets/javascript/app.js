@@ -127,7 +127,7 @@ $(document).ready(function() {
  $("#watchlist-table > tbody").append(newWatchlistRow);
  })
  });
-=======
+
 
     // inputting data from worldtradingdata api
     .then(function(data) {
