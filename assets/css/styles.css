@@ -18,7 +18,9 @@ body {
 .orange {
   color: #d05353;
 }
-
+#navbarText {
+  font-size:25px;
+}
 .navbar {
   position: fixed;
   width: 100%;
@@ -99,9 +101,14 @@ body {
   }
 
   .searchRow {
-    width: 30%;
-    margin: 1% auto 0 auto;
+    width: 60%;
+    margin: 1% auto 0 auto !important; 
+    margin-bottom: 1.5rem !important;
   }
+  #search-bar {
+    font-size: 30px;
+  }
+
 
   .widget {
     height: 80vh;
@@ -136,13 +143,14 @@ body {
   }
 
   .newsRow {
-    margin: 4% auto 0 auto;
+    margin: 4% auto 0 auto !important;
     width: 90%;
     color: #ece2d0;
   }
 
   .newsWrapper {
     background-image: url(../images/lightScratch.png);
+    overflow: scroll;
     height: 85%;
     padding: 0 1% 1% 1%;
     overflow: scroll;
@@ -183,11 +191,15 @@ body {
 
   .table {
     color: #121723;
+    font-size: 40px;
     background-color: #f2fffede;
     margin: 0 0 0 0;
 /*     border-width: 1px;
     border-color: #121723;
     border-style: solid; */
+  }
+  td,th {
+    font-size: 30px !important;
   }
 
   .tableHead {
@@ -203,6 +215,7 @@ body {
   }
   table.table-bordered > tbody > tr > td{
     border:1px solid #49aaa5;
+
   }
 
 /* 
