@@ -10,7 +10,7 @@ $(document).ready(function() {
   "https://api.worldtradingdata.com/api/v1/stock?symbol=" +
   searchWatchlistSymbol +
   "&api_token=E9WkYOdirs63yl0rDrZNAnAfzIT9JEoTVrjDDedq2xeTTeROg4ZvtJy8HCUC";
-=======
+
 const accountDetails = document.querySelector('#account-body');
 const showAccountDetails = (user) => {
   if (user) {
